@@ -1,5 +1,3 @@
-import Container from "@/components/Container";
-import Header from "@/components/Header";
 import styles from "@/styles/Setting.module.css";
 
 export default function Setting() {

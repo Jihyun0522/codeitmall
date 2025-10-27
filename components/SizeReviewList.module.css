@@ -1,0 +1,42 @@
+.sizeReviewList {
+  display: flex;
+  height: 335px;
+  gap: 10px;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.sizeReview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 40px;
+  background: #1f1f1f;
+  border: 1px solid #252525;
+  border-radius: 10px;
+}
+
+.date {
+  color: #b5b5b5;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.profile {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.fit {
+  width: 100px;
+  padding: 8px;
+  background: #121212;
+  color: #b5b5b5;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 9999px;
+}

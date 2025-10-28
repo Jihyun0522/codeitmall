@@ -24,7 +24,7 @@ export default function Home() {
         <title>Codeitmall</title>
       </Head>
       <SearchForm />
-      <ProductList className={styles.products} products={products} />
+      <ProductList className={styles.productList} products={products} />
     </>
   );
 }

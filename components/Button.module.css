@@ -8,3 +8,8 @@
   border: none;
   border-radius: 10px;
 }
+
+:global(.light) .button {
+  background-color: #505050;
+  color: #f9f9f9;
+}

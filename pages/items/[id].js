@@ -4,8 +4,6 @@ import axios from "@/lib/axios";
 import styles from "@/styles/Product.module.css";
 import SizeReviewList from "@/components/SizeReviewList";
 import StarRating from "@/components/StarRating";
-import Header from "@/components/Header";
-import Container from "@/components/Container";
 import Image from "next/image";
 
 export default function Product() {

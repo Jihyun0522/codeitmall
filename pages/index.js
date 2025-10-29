@@ -5,19 +5,18 @@ import axios from "@/lib/axios";
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 
-export default function Home() {
-  const [products, setProducts] = useState([]);
+export async function getStaticProps() {
+  const res = await axios.get("/products");
+  const nextProducts = res.data.results;
 
-  async function getProducts() {
-    const res = await axios.get("/products");
-    const nextProducts = res.data.results;
-    setProducts(nextProducts);
-  }
+  return {
+    props: {
+      products: nextProducts, // 이 값이 페이지 컴포넌트의 props로 전달됨
+    },
+  };
+}
 
-  useEffect(() => {
-    getProducts();
-  }, []);
-
+export default function Home({ products }) {
   return (
     <>
       <Head>
